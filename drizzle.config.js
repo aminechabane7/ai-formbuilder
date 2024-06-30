@@ -5,6 +5,6 @@ export default defineConfig({
   out: "./drizzle",
   dialect: 'postgresql',
   dbCredentials: {
-    url: 'postgresql://accounts:ypvN2ke3PGFE@ep-weathered-heart-a58wmzem.us-east-2.aws.neon.tech/AI-Form-Builder?sslmode=require',
+    url: 'postgresql://neondb_owner:l4GMBqIWQT0v@ep-hidden-sun-a2pmiols.eu-central-1.aws.neon.tech/AI-builder-form?sslmode=require',
   }
 });
