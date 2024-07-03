@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./_components/Header";
 import { ClerkProvider, SignIn } from "@clerk/nextjs";
 import { Toaster } from "@/components/ui/sonner";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
        
         {children}
         <Toaster />
+        <SpeedInsights />
       </body>
     </html>
     </ClerkProvider>
