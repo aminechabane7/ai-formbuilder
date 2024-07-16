@@ -1,5 +1,6 @@
 import { AtomIcon, Edit, Share2 } from 'lucide-react'
 import React from 'react'
+import Image from 'next/image'
 
 function Hero() {
   return (
@@ -19,7 +20,7 @@ function Hero() {
       <div className="mt-8 flex flex-wrap justify-center gap-4">
         <a
           className="block w-full rounded bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-purple-600 focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
-          href="#"
+          href="/dashboard"
         >
           + Create AI Form
         </a>
@@ -40,8 +41,9 @@ function Hero() {
       <h2 className="text-3xl font-bold sm:text-4xl">How it Works</h2>
 
       <p className="mt-4 text-gray-300">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur aliquam doloribus
-        nesciunt eos fugiat. Vitae aperiam fugit consequuntur saepe laborum.
+      Discover how FormGenius simplifies form creation. 
+      Create custom forms effortlessly, gather valuable data, and streamline your workflow. 
+      No coding needed! Start designing forms for surveys, registrations, and more with FormGenius.
       </p>
     </div>
 
@@ -55,8 +57,7 @@ function Hero() {
         <h2 className="mt-4 text-xl font-bold text-black">Write promot for your form</h2>
 
         <p className="mt-1 text-sm text-gray-600">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-          distinctio alias voluptatum blanditiis laudantium.
+        Craft compelling prompts effortlessly to guide form responses effectively with FormGenius
         </p>
       </a>
 
@@ -69,8 +70,7 @@ function Hero() {
         <h2 className="mt-4 text-xl font-bold text-black">Edit Your form </h2>
 
         <p className="mt-1 text-sm text-gray-600">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-          distinctio alias voluptatum blanditiis laudantium.
+        Easily modify and refine your forms on-the-go with FormGenius's intuitive editing tools.
         </p>
       </a>
 
@@ -83,8 +83,7 @@ function Hero() {
         <h2 className="mt-4 text-xl font-bold text-black">Share & Start Accepting Responses</h2>
 
         <p className="mt-1 text-sm text-gray-600">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-          distinctio alias voluptatum blanditiis laudantium.
+        Share your forms seamlessly and begin collecting responses instantly with FormGenius
         </p>
       </a>
 
@@ -101,7 +100,25 @@ function Hero() {
     </div>
   </div>
 </section>
+
+<footer className="bg-gray-900 text-white py-6">
+      <div className="container mx-auto flex justify-between items-center px-4">
+        <div className="flex items-center">
+        <Image src={'/logo.png'} width={45} height={25} alt='FormGenius logo' className="mr-4" />
+          <div>
+            <p className="text-lg font-semibold">FormGenius</p>
+            <p className="text-sm">Create custom forms effortlessly.</p>
+          </div>
+        </div>
+        <div>
+          <a href="#" className="text-gray-400 hover:text-white hover:underline transition-colors duration-300 mr-12">Privacy Policy</a> 
+          <a href="#" className="text-gray-400 hover:text-white hover:underline transition-colors duration-300">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
 </section>
+
   )
 }
 
